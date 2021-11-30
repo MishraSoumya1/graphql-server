@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start:dev": "env-cmd -f ./config/.env.dev nodemon app.js",
-    "start:stag": "env-cmd -f ./config/.env.staging nodemon app.js",
-    "start:prod": "env-cmd -f ./config/.env.production nodemon app.js",
+    "start:dev": "env-cmd -f ./src/config/.env.dev nodemon ./src/app.js",
+    "start:stag": "env-cmd -f ./src/config/.env.staging nodemon ./src/app.js",
+    "start:prod": "env-cmd -f ./src/config/.env.production nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
